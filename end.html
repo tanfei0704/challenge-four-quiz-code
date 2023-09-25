@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-finished d-none" id="quiz-finished">
+            <h2 class="text-info text-center">All done!</h2>
+            <p class="text-center">Your final score is: <span id="score"></span></p>
+            <form id="initials-form" class="text-center">
+                <label for="initials">Enter your initials: </label>
+                <input type="text" id="initials" required></input>
+                <button type="submit" id="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="./end.js"></script>
+    <script src="./question.js"></script>
+</body>
+</html>
