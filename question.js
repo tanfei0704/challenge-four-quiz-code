@@ -126,14 +126,16 @@ function handleChoiceClick(selectedIndex, answerIndex) {
 }
 
 function endQuiz() {
-    // Check if currentindex equals questions.length
-    if (currentindex === questions.length) {
-        clearInterval(timer);
-        timer.textContent = count;
-    }
-        // Redirect to "highscore.html" after a delay
-        setTimeout(function () {
-            window.location.href = "end.html"; 
-        });
+    clearInterval(timer);
+   
+    timer.textContent = count;
+
+    localStorage.setItem('timer', count);
     
-}
+    setTimeout(function () {
+        window.location.href = "end.html"; 
+    });
+    }
+        
+    
+
