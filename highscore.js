@@ -21,7 +21,7 @@ function displayScores() {
 displayScores();
 
 backBtn.addEventListener("click", function () {
-    location.href = "question.html";
+    location.href = "index.html";
 });
 
 clearBtn.addEventListener("click", function () {
