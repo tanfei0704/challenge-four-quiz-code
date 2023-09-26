@@ -1,18 +1,12 @@
 var quizQuestions = document.getElementById("quiz-questions");
 var timer = document.getElementById("timer");
 var btnStart = document.getElementById("btn-start");
-var timecounter = document.getElementById("timecounter");
 var titleitem = document.getElementById("title-item");
-var nextQuestions 
 var questionanswers = document.getElementById("question-answers");
 var myScore = document.getElementById("score");
-var btnScore = document.getElementById("btnScore");
-var addscore = document.getElementById("btn-start")
 var score = 0;
 var count = 60;
-var alert =document.getElementById("alert");
-var info = document.getElementById("info");
-var allScores = [];
+var time;
 var currentindex = 0;
 var storedScores = JSON.parse(localStorage.getItem("userData"));
 var answerChioceText = document.getElementById("alert")
@@ -41,7 +35,7 @@ var questions = [
 // console.log(questions);
     
 btnStart.addEventListener("click", function(){
-    var time = setInterval(function(){
+    time = setInterval(function(){
         if(count > 0) {
             count--;
             timer.textContent= count;}
@@ -126,11 +120,9 @@ function handleChoiceClick(selectedIndex, answerIndex) {
 }
 
 function endQuiz() {
-    clearInterval(timer);
-   
+    clearInterval(time);
     timer.textContent = count;
-
-    localStorage.setItem('timer', count);
+    localStorage.setItem("timer", count);
     
     setTimeout(function () {
         window.location.href = "end.html"; 

@@ -14,7 +14,7 @@ JavaScript, HTML, CSS
 # Usage
 
 1.create a folder;
-2.clone link "" in your foler on terminal;
+2.clone link "git@github.com:tanfei0704/challenge-four-quiz-code.git" in your foler on terminal;
 3.open index.html file;
 4.right click on mouse to look through on default broswer;
 

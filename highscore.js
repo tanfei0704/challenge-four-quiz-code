@@ -6,8 +6,7 @@ var clearBtn = document.querySelector("#clearScores");
 
 function displayScores() {
     if (storedScores !== null) {
-        var scoreList = document.createElement("ol");
-        scoreList.className = "scoreListClass";
+        localStorage.getItem("initals")
         for (var i = 0; i < storedScores.length; i++) {
             var initials = storedScores[i].inits;
             var scores = storedScores[i].userScore
