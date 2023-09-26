@@ -1,15 +1,17 @@
 var quizFinished = document.getElementById("quiz-finished");
-var initials = document.getElementById("initials");
+var initials = document.getElementById("initials").value;
 var btn = document.getElementById("btn");
-var endScore = localStorage.getItem("timer");
-var finalScore = document.getElementsById("final-score");
+var score = document.getElementById("score");
+var userScore = localStorage.getItem("timer");
+var highScore =[];
 
-finalScore.textContent = "Your final score is " + endScore;
+score.textContent =  userScore;
+// console.log(score);
 
-btn.addEventListener("submit", function (event) {
-    event.preventDefault();
-    setTimeout(function () {
-        window.location.href = "highscore.html"; 
-    });
-})
- 
+btn.addEventListener('click',function(){
+
+     setTimeout(function () {
+          window.location.href = "highscore.html"; 
+      });
+});
+
