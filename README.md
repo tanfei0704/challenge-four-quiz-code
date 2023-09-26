@@ -1,5 +1,5 @@
 # challenge-four-quiz-code
-Please visit the deployed project at:
+Please visit the deployed project at:https://tanfei0704.github.io/challenge-four-quiz-code/
 
 # Description
 The purpose of this assignment was to create a timer-based coding assessment using vanilla JavaScript that behaves like so:
@@ -18,4 +18,4 @@ JavaScript, HTML, CSS
 3.open index.html file;
 4.right click on mouse to look through on default broswer;
 
-Or you can directly copy& paste link " " on your broswer.
+Or you can directly copy& paste link "https://tanfei0704.github.io/challenge-four-quiz-code/ " on your broswer.
